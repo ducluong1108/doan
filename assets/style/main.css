@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Home */
+#home {
+	height: 100vh;
+	background-image: url("../images/background.jpg");
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+#home::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: -1;
+}
+#home .content {
+	padding-left: 50px;
+}
+#home .content .logo {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+#home .content h1 {
+	color: #fff;
+	text-transform: uppercase;
+	margin: 10px 0 25px;
+	font-weight: 500;
+}
+#home .content h1 span {
+	font-weight: bold;
+}
+#home .content .home_links {
+	display: flex;
+}
+#home .content .home_links a {
+	text-align: center;
+	margin-right: 50px;
+	text-decoration: none;
+}
+#home .content .home_links a img {
+	width: 100px;
+}
+#home .content .home_links a:hover img {
+	animation: shake 1s ease-in-out 1 forwards;
+}
+#home .content .home_links a h2 {
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: 0s;
+}
+#home .content .home_links a:hover h2 {
+	color: #30336b;
+	transition: 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	25%,
+	75% {
+		transform: translateX(15px);
+	}
+	50% {
+		transform: translateX(-15px);
+	}
+}
