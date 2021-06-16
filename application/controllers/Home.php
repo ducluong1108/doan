@@ -12,7 +12,7 @@ class Home extends CI_Controller
     public function index($view = '')
     {
         if ($view == '') {
-            $this->load->view('home');
+            $this->load->view('home/home');
         } else {
             $data['view'] = $view;
             $this->load->view('home/master_layout_home', $data);
