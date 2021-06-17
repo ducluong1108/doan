@@ -54,3 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['ve-chung-toi'] = 'Home/index/about_us';
+$route['admin'] = 'admin/Admin/index/';
+$route['admin/news'] = 'admin/Admin/index/';
+$route['admin/news/add'] = 'admin/Admin/index/news_add';
