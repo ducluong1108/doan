@@ -1,1 +1,7 @@
-<h1>trang này hiển thị tất cả bài viết</h1>
+<section id="news">
+    <div class="container">
+        <div id="news_table">
+            <?php var_dump($news); ?>
+        </div>
+    </div>
+</section>

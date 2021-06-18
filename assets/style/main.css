@@ -9,6 +9,10 @@
 	3.3. Section Finance
 	3.4. Section Misson
 4. Master layout admin
+5. Trang thêm bài viết
+6. Trang quản lý danh mục
+7. Trang liên hệ
+10. Animation
 ======================================================================*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -26,7 +30,7 @@
 /*1. Home*/
 #home {
 	height: 100vh;
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/background/background.jpg");
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -125,7 +129,7 @@ header {
 }
 /* 2.2. Footer */
 footer {
-	background-image: url(../images/background_footer.jpg);
+	background-image: url(../images/background/background_footer.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -140,7 +144,8 @@ footer::before {
 	height: 241px;
 	bottom: 0;
 	left: 0;
-	background: url("../images/background_footer_left.png") no-repeat 0 bottom;
+	background: url("../images/background/background_footer_left.png") no-repeat 0
+		bottom;
 	z-index: -1;
 }
 footer .block_info {
@@ -257,7 +262,7 @@ footer .copyright {
 	text-align: center;
 	padding: 100px 0;
 	text-transform: uppercase;
-	background-image: url("../images/background_aboutus.jpg");
+	background-image: url("../images/background/background_aboutus.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -302,7 +307,7 @@ footer .copyright {
 /* 3.2. Section Grown Up */
 #aboutus .grown_up {
 	padding: 100px 0;
-	background-image: url("../images/background_growup.jpg");
+	background-image: url("../images/background/background_growup.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -555,8 +560,340 @@ footer .copyright {
 	right: 0;
 	bottom: 100%;
 }
-
-/*============================== Animation ==============================*/
+/* 5. Thêm bài viết */
+#news_add {
+	padding: 50px 0;
+}
+#news_add h2 {
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#news_add form {
+	display: flex;
+	flex-wrap: wrap;
+}
+#news_add form .left {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#news_add form .left label,
+#news_add form .right label,
+#news_add form .content label {
+	font-weight: 600;
+	margin: 20px 0 5px;
+	font-size: 20px;
+}
+#news_add form .left img {
+	width: 69%;
+	height: 300px;
+	object-fit: contain;
+	display: block;
+	border: 1px solid #ddd;
+}
+#news_add form .left > div {
+	width: 100%;
+}
+#news_add form .left > div input {
+	width: 69%;
+}
+#news_add form .left > div button {
+	width: 30%;
+}
+#news_add form .right {
+	width: 55%;
+	margin-left: 5%;
+}
+#news_add form .right > * {
+	display: block;
+	width: 100%;
+}
+#news_add form .right textarea {
+	resize: none;
+	height: 250px;
+}
+#news_add form .content,
+#news_add form .btn {
+	width: 100%;
+}
+#news_add form .content {
+	margin-top: 15px;
+}
+#news_add form .btn {
+	margin-top: 15px;
+	text-align: center;
+}
+#news_add form .btn button {
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background: #2ecc71;
+	cursor: pointer;
+}
+#news_add form .btn button:hover {
+	background: #27ae60;
+}
+/* 6. Trang quản lý danh mục */
+#category {
+	padding: 50px 0;
+}
+#category h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#category .add_category {
+	margin-bottom: 20px;
+}
+#category .add_category h3 {
+	margin-bottom: 15px;
+}
+#category .add_category input {
+	width: 300px;
+}
+#category .all_category h3 {
+	margin-bottom: 15px;
+}
+#category {
+	padding: 50px 0;
+}
+#category h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#category .add_category {
+	margin-bottom: 20px;
+}
+#category .add_category h3 {
+	margin-bottom: 15px;
+}
+#category .add_category input {
+	width: 300px;
+}
+#category .all_category h3 {
+	margin-bottom: 15px;
+}
+#table_category {
+	width: 100%;
+}
+#table_category,
+tr,
+td,
+th {
+	border: 1px solid #666;
+	border-collapse: collapse;
+}
+#table_category td {
+	text-align: center;
+}
+.btn {
+	padding: 5px;
+	display: inline-block;
+	margin: 5px;
+}
+.btn:hover {
+	background: #eee;
+}
+.btn.edit {
+	color: #2ecc71;
+}
+.btn.delete {
+	color: #e74c3c;
+}
+#edit_category {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 200px;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#edit_category.show {
+	display: block;
+}
+#edit_category .content input {
+	width: 100%;
+}
+#edit_category .content button {
+	border: none;
+	width: 50px;
+	height: 20px;
+	display: block;
+	color: #fff;
+	cursor: pointer;
+}
+#edit_category .content button:nth-of-type(1) {
+	background: #2ecc71;
+	bottom: 50px;
+	right: 120px;
+	position: absolute;
+}
+#edit_category .content button:nth-of-type(2) {
+	background: #e74c3c;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+/* 7. Trang liên hệ */
+#contact h2 {
+	text-align: center;
+	padding: 100px 0;
+	text-transform: uppercase;
+	background-image: url(../images/background/background_contact.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	color: #fff;
+	font-size: 40px;
+}
+#contact .contact_mail {
+	padding: 100px 0;
+	background-image: url(../images/background/dot-map.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f7f9fa;
+}
+#contact .contact_mail .container {
+	display: flex;
+}
+#contact .contact_mail .left {
+	width: 30%;
+	background: #fff;
+	box-shadow: 0px 0px 100px 0px rgba(27, 68, 163, 0.07);
+	padding: 20px 50px 30px;
+}
+#contact .contact_mail .left h3 {
+	font-size: 25px;
+}
+#contact .contact_mail .left .blocks {
+	margin: 30px 0;
+}
+#contact .contact_mail .left .block {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+#contact .contact_mail .left .block .icon {
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#contact .contact_mail .left .block .icon i {
+	font-size: 40px;
+	color: #38ada9;
+}
+#contact .contact_mail .left .block .block_content {
+	width: 80%;
+}
+#contact .contact_mail .left .block .block_content h4 {
+	font-size: 17px;
+	text-transform: uppercase;
+}
+#contact .contact_mail .left ul.social_icon {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#contact .contact_mail .left ul.social_icon li {
+	margin: 0 15px;
+}
+#contact .contact_mail .left ul.social_icon li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #fff;
+	border-radius: 50%;
+}
+#contact .contact_mail .left ul.social_icon li:first-child a {
+	background: #4064ac;
+}
+#contact .contact_mail .left ul.social_icon li:nth-child(2) a {
+	background: linear-gradient(
+		45deg,
+		#f09433 0%,
+		#e6683c 25%,
+		#dc2743 50%,
+		#cc2366 75%,
+		#bc1888 100%
+	);
+}
+#contact .contact_mail .left ul.social_icon li:nth-child(3) a {
+	background: #f00;
+}
+#contact .contact_mail .right {
+	width: 65%;
+	margin-left: 5%;
+}
+#contact .contact_mail .right span {
+	color: #38ada9;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+}
+#contact .contact_mail .right span::after {
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	width: 75px;
+	transform: translatey(-2px);
+	border-bottom: 1px solid;
+	margin-left: 10px;
+}
+#contact .contact_mail .right h3 {
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 15px 0 20px;
+}
+#contact .contact_mail .right form {
+	display: flex;
+	flex-wrap: wrap;
+}
+#contact .contact_mail .right form input {
+	width: calc(50% - 15px);
+	margin-bottom: 30px;
+	padding: 10px;
+}
+#contact .contact_mail .right form input:nth-child(odd) {
+	margin-right: 30px;
+}
+#contact .contact_mail .right form textarea {
+	width: 100%;
+	padding: 10px;
+	resize: none;
+}
+#contact .contact_mail .right form button {
+	border: none;
+	padding: 12px 24px;
+	background: #202426;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+#contact .map iframe {
+	width: 100%;
+}
+/* 10. Animation */
 @keyframes shake {
 	0%,
 	100% {

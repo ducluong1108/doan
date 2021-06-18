@@ -15,7 +15,7 @@
             <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo">
             <h1>Chúng tôi là<br><span>xây dựng Hoàng Đức</span></h1>
             <div class="home_links">
-                <a href="<?= base_url('ve-chung-toi') ?>">
+                <a href="<?= base_url('about-us') ?>">
                     <img src="<?= base_url('assets/images/aboutus.png') ?>" alt="Về chúng tôi">
                     <h2>Về chúng tôi</h2>
                 </a>

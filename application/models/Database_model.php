@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Database_model extends CI_Model
 {
-    public function select($table, $column = '*', $where = '', $limit = '', $offset = 0, $order = '')
+    public function select($table, $order = '', $column = '*', $where = '', $limit = '', $offset = 0, $join = '')
     {
         if ($where != '') {
             $this->db->where($where);
@@ -28,6 +28,34 @@ class Database_model extends CI_Model
     {
         $this->db->insert($table, $data);
         return $this->db->insert_id();
+    }
+
+    public function delete($table, $where)
+    {
+        $this->db->where($where);
+        return $this->db->delete($table);
+    }
+
+    public function edit($table, $where, $set)
+    {
+        $this->db->set($set);
+        $this->db->where($where);
+        return $this->db->update($table);
+    }
+
+    public function call_sp($name)
+    {
+        $sql = "CALL $name()";
+        $query = $this->db->query($sql);
+        $result = $query->result_array();
+        $query->next_result();
+        $query->free_result();
+        return $result;
+    }
+
+    public function custom_query($sql)
+    {
+        return $this->db->query($sql)->result_array();
     }
 }
 

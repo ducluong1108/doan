@@ -9,13 +9,9 @@ class Admin extends CI_Controller
     {
         parent::__construct();
     }
-    public function index($view)
+    public function index()
     {
-        if ($view == '') {
-            $data['view'] = 'dashboard';
-        } else {
-            $data['view'] = $view;
-        }
+        $data['view'] = 'admin/dashboard';
         $this->load->view('admin/master_layout_admin', $data);
     }
 }

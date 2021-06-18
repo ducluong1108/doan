@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xây dựng Hoàng Đức -</title>
+    <title>Xây dựng Hoàng Đức</title>
     <link rel="stylesheet" href="<?= base_url('assets/style/main.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 
 <body>
@@ -20,11 +25,11 @@
             </a>
             <ul class="links">
                 <li><a href="<?= base_url() ?>"><i class="fas fa-home"></i></a></li>
-                <li class="active"><a href="<?= base_url('ve-chung-toi') ?>">Về chúng tôi</a></li>
+                <li class="active"><a href="<?= base_url('about-us') ?>">Về chúng tôi</a></li>
                 <li><a href="<?= base_url() ?>">Máy móc & thiết bị</a></li>
                 <li><a href="<?= base_url() ?>">Dự án thi công</a></li>
                 <li><a href="<?= base_url() ?>">Mẫu nhà</a></li>
-                <li><a href="<?= base_url() ?>">Liên hệ</a></li>
+                <li><a href="<?= base_url('contact') ?>">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
