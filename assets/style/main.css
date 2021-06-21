@@ -14,7 +14,9 @@
 7. Trang quản lý bài viết
 8. Trang liên hệ
 9. Trang sửa bài viết
-10. Animation
+10. Trang chi tiết bài viết
+11. Trang danh mục bài viết
+20. Animation
 ======================================================================*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -767,6 +769,24 @@ th {
 #news #table_news td {
 	text-align: center;
 }
+.alert {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	animation: fadeOut 3s linear 1 forwards;
+}
+.alert p {
+	background: yellow;
+	padding: 10px;
+	border-radius: 15px;
+	color: #fff;
+}
+.alert p.success {
+	background: #2ecc71;
+}
+.alert p.error {
+	background: #e74c3c;
+}
 
 /* 8. Trang liên hệ */
 #contact h2 {
@@ -919,7 +939,7 @@ th {
 #contact .map iframe {
 	width: 100%;
 }
-/* Sửa bài viết*/
+/* 9. Sửa bài viết*/
 #news_edit {
 	padding: 50px 0;
 }
@@ -995,8 +1015,86 @@ th {
 #news_edit form .btn button:hover {
 	background: #27ae60;
 }
-
-/* 10. Animation */
+/* 10. Trang chi tiết bài viết*/
+#news_detail {
+	padding: 50px;
+}
+#news_detail .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+#news_detail h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	width: 100%;
+}
+#news_detail .content {
+	width: 68%;
+	margin-right: 2%;
+}
+#news_detail .content img {
+	max-width: 80%;
+	height: auto !important;
+	margin: 0 auto;
+	display: block;
+}
+#news_detail .relative_news {
+	width: 30%;
+}
+#news_detail .relative_news h3 {
+	margin-bottom: 20px;
+}
+#news_detail .relative_news .item {
+	display: flex;
+	margin-bottom: 15px;
+	text-decoration: none;
+}
+#news_detail .relative_news .item img {
+	width: 160px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+#news_detail .relative_news .item h4 {
+	margin-left: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000;
+	width: calc(100% - 175px);
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+/* 11. Trang danh mục bài viết */
+#news_of_category {
+	padding: 50px 0;
+}
+#news_of_category h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#news_of_category .items {
+	display: flex;
+	flex-wrap: wrap;
+}
+#news_of_category .item {
+	width: calc(100% / 3);
+	padding: 0 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	margin-bottom: 25px;
+}
+#news_of_category .item img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+/* 20. Animation */
 @keyframes shake {
 	0%,
 	100% {
@@ -1008,5 +1106,16 @@ th {
 	}
 	50% {
 		transform: translateX(-15px);
+	}
+}
+
+@keyframes fadeOut {
+	0%,
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		pointer-events: none;
 	}
 }

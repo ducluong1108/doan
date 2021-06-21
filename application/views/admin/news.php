@@ -1,4 +1,7 @@
 <section id="news">
+    <div class="alert">
+        <?php echo $this->session->tempdata('alert'); ?>
+    </div>
     <div class="container">
         <h3>Tất cả bài viết</h3>
         <table id="table_news">

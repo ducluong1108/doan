@@ -159,6 +159,7 @@ if (!function_exists('vietdecode')) {
         $value = str_replace("-", " ", $value);
         $value = str_replace("   ", " ", $value);
         $value = str_replace("  ", " ", $value);
+        $value = str_replace("& ", "", $value);
         return strtolower(str_replace(" ", "-", trim($value)));
     }
 }

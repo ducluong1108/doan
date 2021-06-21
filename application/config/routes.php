@@ -53,8 +53,9 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['about-us'] = 'Home/index/about_us';
-$route['contact'] = 'Home/index/contact';
+$route['about-us'] = 'home/index/about_us';
+$route['contact'] = 'home/index/contact';
+$route['news/(:any)'] = 'news/index/$1';
 
 $route['admin'] = 'admin/Admin';
 $route['admin/news/add'] = 'admin/news/add_news';

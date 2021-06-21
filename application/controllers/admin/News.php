@@ -39,10 +39,12 @@ class News extends CI_Controller
             ];
 
             if ($this->Database_model->insert('news', $data) > 0) {
-                echo 'Thêm thành công';
+
+                $this->session->set_tempdata('alert', '<p class="success">Thêm thành công</p>', 1);
             } else {
-                echo 'Thất bại';
+                $this->session->set_tempdata('alert', '<p class="error">Thêm thất bại</p>', 1);
             }
+            redirect(base_url('admin/news'));
         } else {
             $data['view'] = 'admin/news_add';
             $this->load->view('admin/master_layout_admin', $data);

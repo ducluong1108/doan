@@ -19,13 +19,13 @@
                     <img src="<?= base_url('assets/images/aboutus.png') ?>" alt="Về chúng tôi">
                     <h2>Về chúng tôi</h2>
                 </a>
-                <a href="#">
+                <a href="<?= base_url('news/du-an-thi-cong') ?>">
                     <img src="<?= base_url('assets/images/design.png') ?>" alt="Thiết kế">
-                    <h2>Thiết kế</h2>
+                    <h2>Dự án thi công</h2>
                 </a>
-                <a href="#">
+                <a href="<?= base_url('news/may-moc-thiet-bi') ?>">
                     <img src="<?= base_url('assets/images/contract.png') ?>" alt="Thi công">
-                    <h2>Thi công</h2>
+                    <h2>Máy móc thiết bị</h2>
                 </a>
             </div>
         </div>

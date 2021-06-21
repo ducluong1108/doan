@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Database_model extends CI_Model
 {
-    public function select($table, $order = '', $column = '*', $where = '', $limit = '', $offset = 0, $join = '')
+    public function select($table, $order = '', $column = '*', $where = '', $limit = '', $offset = 0)
     {
         if ($where != '') {
             $this->db->where($where);

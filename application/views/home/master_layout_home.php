@@ -26,7 +26,7 @@
             <ul class="links">
                 <li><a href="<?= base_url() ?>"><i class="fas fa-home"></i></a></li>
                 <li class="active"><a href="<?= base_url('about-us') ?>">Về chúng tôi</a></li>
-                <li><a href="<?= base_url() ?>">Máy móc & thiết bị</a></li>
+                <li><a href="<?= base_url('news/may-moc-thiet-bi') ?>">Máy móc & thiết bị</a></li>
                 <li><a href="<?= base_url() ?>">Dự án thi công</a></li>
                 <li><a href="<?= base_url() ?>">Mẫu nhà</a></li>
                 <li><a href="<?= base_url('contact') ?>">Liên hệ</a></li>
@@ -34,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <?php $this->load->view('home/' . $view); ?>
+        <?php $this->load->view($view); ?>
     </main>
     <footer>
         <div class="container">
@@ -92,6 +92,17 @@
             </div>
         </div>
     </footer>
+    <script>
+    $(document).ready(function() {
+        $('header nav li').removeClass('active');
+        $('header nav li').each(function() {
+            if ($(this).find('a').attr('href') == window.location.href) {
+                $(this).addClass('active');
+                return false;
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
