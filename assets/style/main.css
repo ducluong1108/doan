@@ -11,7 +11,8 @@
 4. Master layout admin
 5. Trang thêm bài viết
 6. Trang quản lý danh mục
-7. Trang liên hệ
+7. Trang quản lý bài viết
+8. Trang liên hệ
 10. Animation
 ======================================================================*/
 
@@ -742,7 +743,31 @@ th {
 	bottom: 50px;
 	right: 50px;
 }
-/* 7. Trang liên hệ */
+/* 7. Trang quản lý bài viết */
+#news h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#news #table_news {
+	width: 100%;
+	border: 1px solid #666;
+	border-collapse: collapse;
+}
+#news #table_news .date {
+	width: 200px;
+}
+#news #table_news img {
+	width: 75px;
+	height: 75px;
+	object-fit: contain;
+}
+#news #table_news td {
+	text-align: center;
+}
+
+/* 8. Trang liên hệ */
 #contact h2 {
 	text-align: center;
 	padding: 100px 0;
