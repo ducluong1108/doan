@@ -13,6 +13,7 @@
 6. Trang quản lý danh mục
 7. Trang quản lý bài viết
 8. Trang liên hệ
+9. Trang sửa bài viết
 10. Animation
 ======================================================================*/
 
@@ -918,6 +919,83 @@ th {
 #contact .map iframe {
 	width: 100%;
 }
+/* Sửa bài viết*/
+#news_edit {
+	padding: 50px 0;
+}
+#news_edit h2 {
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#news_edit form {
+	display: flex;
+	flex-wrap: wrap;
+}
+#news_edit form .left {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#news_edit form .left label,
+#news_edit form .right label,
+#news_edit form .content label {
+	font-weight: 600;
+	margin: 20px 0 5px;
+	font-size: 20px;
+}
+#news_edit form .left img {
+	width: 69%;
+	height: 300px;
+	object-fit: contain;
+	display: block;
+	border: 1px solid #ddd;
+}
+#news_edit form .left > div {
+	width: 100%;
+}
+#news_edit form .left > div input {
+	width: 69%;
+}
+#news_edit form .left > div button {
+	width: 30%;
+}
+#news_edit form .right {
+	width: 55%;
+	margin-left: 5%;
+}
+#news_edit form .right > * {
+	display: block;
+	width: 100%;
+}
+#news_edit form .right textarea {
+	resize: none;
+	height: 250px;
+}
+#news_edit form .content,
+#news_edit form .btn {
+	width: 100%;
+}
+#news_edit form .content {
+	margin-top: 15px;
+}
+#news_edit form .btn {
+	margin-top: 15px;
+	text-align: center;
+}
+#news_edit form .btn button {
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background: #2ecc71;
+	cursor: pointer;
+}
+#news_edit form .btn button:hover {
+	background: #27ae60;
+}
+
 /* 10. Animation */
 @keyframes shake {
 	0%,
