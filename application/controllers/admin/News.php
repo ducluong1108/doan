@@ -65,6 +65,37 @@ class News extends CI_Controller
             echo json_encode($response);
         }
     }
+
+    public function edit_news($id)
+    {
+        $where = 'news_id = ' . $id;
+        if (isset($_POST['submit'])) {
+            $name = $this->input->post('name');
+            $image = $this->input->post('image');
+            $description = $this->input->post('description');
+            $content = $this->input->post('content');
+            $category = $this->input->post('category');
+
+            $set = [
+                'name' => $name,
+                'description' => $description,
+                'content' => $content,
+                'image' => $image,
+                'link' => vietdecode($name),
+                'category' => $category
+            ];
+
+            if ($this->Database_model->edit('news', $where, $set)) {
+                echo "SUCCESS";
+            } else {
+                echo "FAIL";
+            }
+        } else {
+            $data['news'] = $this->Database_model->select('news', '', '*', $where);
+            $data['view'] = 'admin/news_edit';
+            $this->load->view('admin/master_layout_admin', $data);
+        }
+    }
 }
 
 /* End of file News.php and path /application/controllers/admin/News.php */

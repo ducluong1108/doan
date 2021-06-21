@@ -20,7 +20,8 @@
                 <td><?= $row['category'] ?></td>
                 <td><?= $row['publish'] ?></td>
                 <td>
-                    <a href="#" class="btn edit"><i class="fas fa-edit"></i></a>
+                    <a href="<?= base_url('admin/news/edit_news/') . $row['news_id'] ?>" class="btn edit"><i
+                            class="fas fa-edit"></i></a>
                     <a href="#" value="<?= $row['news_id'] ?>" class="btn delete"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
