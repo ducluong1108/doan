@@ -37,7 +37,7 @@
                     </ul>
                 </li>
                 <li><a href="#" class="file_manage">Quản lý file</a></li>
-                <li><a href="#">Đăng xuất</a></li>
+                <li><a href="<?= base_url('admin/login/logout') ?>">Đăng xuất</a></li>
             </ul>
         </nav>
     </header>

@@ -11,8 +11,12 @@ class Admin extends CI_Controller
     }
     public function index()
     {
-        $data['view'] = 'admin/dashboard';
-        $this->load->view('admin/master_layout_admin', $data);
+        if (is_null($this->session->userdata('admin'))) {
+            redirect(base_url('login'));
+        } else {
+            $data['view'] = 'admin/dashboard';
+            $this->load->view('admin/master_layout_admin', $data);
+        }
     }
 }
 

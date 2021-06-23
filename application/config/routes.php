@@ -57,6 +57,6 @@ $route['about-us'] = 'home/index/about_us';
 $route['contact'] = 'home/index/contact';
 $route['news/(:any)'] = 'news/index/$1';
 
-$route['admin'] = 'admin/Admin';
+$route['admin'] = 'admin/news';
 $route['admin/news/add'] = 'admin/news/add_news';
 $route['login'] = 'admin/login';

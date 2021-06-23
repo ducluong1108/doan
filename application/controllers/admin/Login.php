@@ -27,12 +27,24 @@ class Login extends CI_Controller
             if (count($acoount) > 0) {
                 $response['status'] = 1;
                 $response['message'] = 'Đăng nhập thành công';
+                $newdata = array(
+
+                    'admin' => TRUE
+                );
+
+                $this->session->set_userdata($newdata);
             } else {
                 $response['status'] = 0;
                 $response['message'] = 'Tài khoản hoặc mật khẩu không đúng';
             }
             echo json_encode($response);
         }
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect(base_url());
     }
 }
 

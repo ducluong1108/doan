@@ -36,7 +36,71 @@
     <main>
         <?php $this->load->view($view); ?>
     </main>
+    <div id="cost">
+        <div class="container">
+            <section class="section cost">
+                <label for="loainha">Chọn Loại Nhà<select name="" id="loainha">
+                        <option selected value="2900000">Nhà phố hiện đại</option>
+                        <option value="3300000">Nhà phố hiện đại</option>
+                        <option value="3300000">Nhà biệt thự hiện đại</option>
+                        <option value="3500000">Nhà biệt thự cổ điển</option>
+                    </select>
+                </label>
+                <label for="chiphi">Chi phí xây nhà<select name="" id="chiphi">
+                        <option selected value="phan-tho">Xây nhà phần thô</option>
+                        <option value="tron-goi">Xây nhà trọn gói</option>
+                    </select>
+                </label>
+                <label for="mucdautu">Mức đầu tư<select name="" id="mucdautu">
+                        <option selected value="4800000">Cơ bản</option>
+                        <option value="5300000">TB - Khá</option>
+                        <option value="5600000">Khá+</option>
+                        <option value="5900000">Tốt</option>
+                        <option value="6500000">Cao cấp</option>
+                    </select>
+                </label>
+                <label for="mattien">Mặt tiền<select name="" id="mattien">
+                        <option selected value="1">1</option>
+                        <option value="100000">2</option>
+                    </select>
+                </label>
+                <label>Chiều rộng<input type="number" id="chieurong" /></label>
+                <label>Chiều dài<input type="number" id="chieudai" /></label>
+                <label>Số tầng(Trừ tum, lửng) <input value="1" type="number" id="tang" /></label>
+                <label for="hem">Hẻm<select name="" id="hem">
+                        <option selected value="0">Rộng hơn 5m</option>
+                        <option value="1">Rộng từ 3m - 5m</option>
+                        <option value="2">Nhỏ hơn 3m</option>
+                    </select>
+                </label>
+                <label for="santhuong">Sân thượng<select name="" id="santhuong">
+                        <option selected value="0">Không</option>
+                        <option value="30">Sân thượng</option>
+                        <option value="50">Sân thượng có mái</option>
+                    </select>
+                </label>
+                <label for="mong">Móng<select name="" id="mong">
+                        <option selected value="50">Móng băng</option>
+                        <option value="40">Móng cọc(Móng đài)</option>
+                        <option value="30">Móng đơn</option>
+                    </select>
+                </label>
+                <label for="tangham">Hầm<select name="" id="tangham">
+                        <option selected value="1">Không</option>
+                        <option value="150%">Có</option>
+                    </select>
+                </label>
+                <label for="mai">Mái<select name="" id="mai">
+                        <option selected value="30">Mái tôn</option>
+                        <option value="40">Mái BTCT</option>
+                    </select>
+                </label>
+                <div class="tinhtien"><button id="btn_tinhtien">tính tiền</button></div>
+            </section>
+        </div>
+    </div>
     <footer>
+
         <div class="container">
             <div class="block_info">
                 <ul class="info">
