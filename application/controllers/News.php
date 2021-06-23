@@ -27,14 +27,18 @@ class News extends CI_Controller
                 $where = "category = '" . $category[0]['category_id'] . "'";
                 $data['list_news'] = $this->Database_model->select('news', 'news_id DESC', '*', $where);
             } else {
-                $data['view'] = 'home/news_detail';
+
 
                 $where = "link = '$link'";
                 $data['news'] = $this->Database_model->select('news', '', '*', $where, 1);
-
-                $column = 'name, image, link';
-                $where = "category = '" . $data['news'][0]['category'] . "' AND news_id <>" . $data['news'][0]['news_id'];
-                $data['relative_news'] = $this->Database_model->select('news', 'news_id DESC', $column, $where);
+                if (count($data['news']) > 0) {
+                    $data['view'] = 'home/news_detail';
+                    $column = 'name, image, link';
+                    $where = "category = '" . $data['news'][0]['category'] . "' AND news_id <>" . $data['news'][0]['news_id'];
+                    $data['relative_news'] = $this->Database_model->select('news', 'news_id DESC', $column, $where);
+                } else {
+                    $data['view'] = '404.php';
+                }
             }
         }
         $this->load->view('home/master_layout_home', $data);

@@ -27,8 +27,8 @@
                 <li><a href="<?= base_url() ?>"><i class="fas fa-home"></i></a></li>
                 <li class="active"><a href="<?= base_url('about-us') ?>">Về chúng tôi</a></li>
                 <li><a href="<?= base_url('news/may-moc-thiet-bi') ?>">Máy móc & thiết bị</a></li>
-                <li><a href="<?= base_url() ?>">Dự án thi công</a></li>
-                <li><a href="<?= base_url() ?>">Mẫu nhà</a></li>
+                <li><a href="<?= base_url('news/du-an-thi-cong') ?>">Dự án thi công</a></li>
+                <li><a href="<?= base_url('news/mau-thiet-ke') ?>">Mẫu thiết kế</a></li>
                 <li><a href="<?= base_url('contact') ?>">Liên hệ</a></li>
             </ul>
         </nav>
