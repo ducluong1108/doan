@@ -59,3 +59,4 @@ $route['news/(:any)'] = 'news/index/$1';
 
 $route['admin'] = 'admin/Admin';
 $route['admin/news/add'] = 'admin/news/add_news';
+$route['login'] = 'admin/login';
