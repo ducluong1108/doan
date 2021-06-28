@@ -14,8 +14,8 @@ class Admin extends CI_Controller
         if (is_null($this->session->userdata('admin'))) {
             redirect(base_url('login'));
         } else {
-            $data['view'] = 'admin/dashboard';
-            $this->load->view('admin/master_layout_admin', $data);
+
+            redirect(base_url('admin/news'));
         }
     }
 }

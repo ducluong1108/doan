@@ -42,7 +42,7 @@ class Mail extends CI_Controller
 
             $this->load->library('email', $config);
             $this->email->from($email, 'Khách hàng');
-            $this->email->to('minhhoang260798@gmail.com');
+            $this->email->to('xaydunghoangduc@gmail.com');
             $this->email->subject($subject);
             $this->email->message($mail_content);
             if (!$this->email->send()) {

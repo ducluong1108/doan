@@ -88,7 +88,7 @@ class News extends CI_Controller
             ];
 
             if ($this->Database_model->edit('news', $where, $set)) {
-                echo "SUCCESS";
+                redirect(base_url('admin'));
             } else {
                 echo "FAIL";
             }

@@ -3,15 +3,15 @@
     <section class="contact_mail">
         <div class="container">
             <div class="left">
-                <h3>GET OUR CONTACTS FROM HERE</h3>
+                <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
                 <div class="blocks">
                     <div class="block">
                         <div class="icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="block_content">
-                            <h4>Our location</h4>
-                            <p class="content">Bệnh viện tâm thần</p>
+                            <h4>Địa chỉ</h4>
+                            <p class="content">Biên Hòa Đồng Nai</p>
                         </div>
                     </div>
                     <div class="block">
@@ -19,7 +19,7 @@
                             <i class="fas fa-phone-volume"></i>
                         </div>
                         <div class="block_content">
-                            <h4>Phone number</h4>
+                            <h4>Số điện thoại</h4>
                             <p class="content">+84 123 456 789</p>
                         </div>
                     </div>
@@ -28,35 +28,36 @@
                             <i class="far fa-envelope"></i>
                         </div>
                         <div class="block_content">
-                            <h4>Email address</h4>
-                            <p class="content">xamlon@gmail.com</p>
+                            <h4>Email</h4>
+                            <p class="content">xaydunghoangduc@gmail.com</p>
                         </div>
                     </div>
                 </div>
                 <ul class="social_icon">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="<?= base_url('https://www.facebook.com/xaydunghoangduc/') ?>"><i
+                                class="fab fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
             <div class="right">
-                <span>Contact us</span>
-                <h3>GET IN TOUCH WITH US</h3>
+                <span>Liên hệ</span>
+                <h3>HÃY LIÊN HỆ VỚI CHÚNG TÔI</h3>
                 <form>
-                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="name" placeholder="Tên">
                     <input type="text" name="email" placeholder="Email">
-                    <input type="text" name="phone" placeholder="Phone">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" rows="5" placeholder="Message"></textarea>
-                    <button>Send message</button>
+                    <input type="text" name="phone" placeholder="Số điện thoại">
+                    <input type="text" name="subject" placeholder="Tiêu đề">
+                    <textarea name="message" rows="5" placeholder="Lời nhắn"></textarea>
+                    <button>Gửi thông tin</button>
                 </form>
             </div>
         </div>
     </section>
     <section class="map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9698146637315!2d106.843883314338!3d10.965650958672049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174dc3cc88199a9%3A0x520dab10ebb6cfc8!2zQuG7h25oIFZp4buHbiBUw6JtIFRo4bqnbiBUcnVuZyDGr8ahbmcgMg!5e0!3m2!1svi!2s!4v1624004818377!5m2!1svi!2s"
-            height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7184291097665!2d106.8669398142885!3d10.984612858321302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174ddb237f9dd59%3A0x3ff1538c511f05d7!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBDw7RuZyBOZ2jhu4cgxJDhu5NuZyBOYWk!5e0!3m2!1svi!2s!4v1624525200104!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 </div>
 <script>

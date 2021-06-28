@@ -27,7 +27,6 @@
                 <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo">
             </a>
             <ul class="menu">
-                <li><a href="#">Dashboard</a></li>
                 <li>
                     <a href="#">Bài viết</a>
                     <ul class="menu_2">
